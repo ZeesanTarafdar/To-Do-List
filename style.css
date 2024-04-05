@@ -6,10 +6,12 @@
 html{
     font-size: 62.5%;
 }
+body{
+    background: linear-gradient( #26425A, #86A8CF, #E1CBD7, #C38EB4, #012357); 
+}
 .container{
     height: 100vh;
     width: 100vw;
-    background: linear-gradient( #26425A, #86A8CF, #E1CBD7, #C38EB4, #012357);
     padding: 1.0rem;
 }
 .to-do{
