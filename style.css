@@ -1,0 +1,129 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient( #26425A, #86A8CF, #E1CBD7, #C38EB4, #012357);
+    padding: 1.0rem;
+}
+.to-do{
+    width: 100vw;
+    max-width: 54.0rem;
+    background-color: white;
+    margin: 10.0rem auto 2.0rem;
+    padding: 4.0rem 3.0rem 7.0rem;
+    border: 0.2rem solid black;
+    border-radius: 2.0rem;
+}
+.to-do h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+}
+.to-do h2 img{
+    width: 4.0rem;
+    margin-left: 1.0rem;
+}
+h2{
+    padding-bottom: 1.0rem;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 3.0rem;
+    padding-left: 3.0rem;
+    margin-bottom: 3.0rem;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 1.0rem;
+}
+
+input::placeholder{
+    color: black;
+}
+button{
+    width: auto;
+    border: 0.1rem solid black;
+    outline: none;
+    padding: 2.0rem 5.0rem;
+    border-radius: 2.5rem;
+    background-color: red;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgb(243, 24, 24);
+    color: white;
+    border: 0.1rem solid black;
+}
+ul li{
+    list-style: none;
+    font-size: 1.7rem;
+    padding: 1.2rem 0.8rem 1.2rem 5.0rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 5.0rem;
+    background-image: url(../img/Uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 1.2rem;
+    left: 0.8rem;
+}
+ul li.checked{
+    color: black;
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url(../img/Check.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 4.0rem;
+    height: 4.0rem;
+    font-size: 2.2rem;
+    color: #969090;
+    line-height: 4.0rem;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
+
+@media(max-width:998px)
+{
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:30px)
+{
+    html{
+        font-size: 30%;
+    }
+}
