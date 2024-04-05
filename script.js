@@ -1,8 +1,8 @@
-let inputbox = document.getElementById("input-box");
-let listcontainer = document.getElementById("list-container");
+const inputbox = document.getElementById("input-box");
+const listcontainer = document.getElementById("list-container");
 function addTask(){
     if(inputbox.value === ''){
-        alert("You must Write Something");
+        alert("You must Write Something!");
     }
     else{
         let li = document.createElement("li");

@@ -85,7 +85,7 @@ ul li::before{
     height: 2.8rem;
     width: 2.8rem;
     border-radius: 5.0rem;
-    background-image: url(../img/Uncheck.png);
+    background-image: url("./Uncheck.png");
     background-size: cover;
     background-position: center;
     top: 1.2rem;
@@ -97,7 +97,7 @@ ul li.checked{
 
 }
 ul li.checked::before{
-    background-image: url(../img/Check.png);
+    background-image: url("./Check.png");
 }
 ul li span{
     position: absolute;
